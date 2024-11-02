@@ -1,0 +1,31 @@
+{{#> app}}
+{{#*inline "content"}}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">Login</div>
+        <div class="card-body">
+          {{#if flashErrors}}
+          {{#each flashErrors}}
+          <p class="alert alert-danger">{{this}}</p>
+          {{/each}}
+          {{/if}}
+          <div class="row justify-content-center mb-0">
+            <div class="col-md-8 offset-md-4">
+              <button class="btn bg-primary text-white" {{#if session.user}}disabled{{/if}}>
+                {{#if session.user}}
+                Login With Google
+                {{else}}
+                <a class="text-white" href='/auth'>Login With Google</a>
+                {{/if}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/inline}}
+{{/app}}

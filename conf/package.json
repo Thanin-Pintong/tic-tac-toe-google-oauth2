@@ -1,0 +1,28 @@
+{
+  "name": "tic-tac-toe-google-oauth2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.0",
+    "express-session": "^1.18.1",
+    "hbs": "^4.2.0",
+    "hbs-utils": "^0.0.4",
+    "less-middleware": "^3.1.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth2": "^0.2.0",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.17",
+    "validator": "^13.12.0"    
+  }
+}
