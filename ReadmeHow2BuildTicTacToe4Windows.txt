@@ -2,9 +2,11 @@ Prerequisite
 node (18.19.0+), npm (10.2.3+) and git 2.43.0
 
 Download the Tic-Tac-Toe project(s) from Github repository.
-> git clone
+Open Git CMD
+> git clone https://github.com/Thanin-Pintong/tic-tac-toe-google-oauth2.git
 
 Change directory to the project named "tic-tac-toe-google-oauth2"
+Open Command Prompt
 > cd tic-tac-toe-google-oauth2
 > copy package.json.win package.json
 

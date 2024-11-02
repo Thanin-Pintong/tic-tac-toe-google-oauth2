@@ -2,7 +2,8 @@ Prerequisite
 node (18+), npm (9.7+) and git
 
 Download the Tic-Tac-Toe project(s) from Github repository.
-$ git clone
+Open Shell.
+$ git clone https://github.com/Thanin-Pintong/tic-tac-toe-google-oauth2.git
 
 Change directory to the project named "tic-tac-toe-google-oauth2"
 $ cd tic-tac-toe-google-oauth2
