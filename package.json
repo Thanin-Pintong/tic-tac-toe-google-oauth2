@@ -7,14 +7,14 @@
     "build": "npm run build1 && npm run build2 && npm run build3 && npm run build4 && npm run build5 && npm run build6 && npm run build7 && npm run build8 && npm run build9 && npm run build10",
     "build1": "npx cpy 'tic-tac-toe-pwa/build/*.png' src/tictactoe/images",
     "build2": "npx cpy 'tic-tac-toe-pwa/build/*.json' src/tictactoe/javascripts",
-    "build3": "npx cpy 'tic-tac-toe-pwa/build/*robots.txt' src/public/",    
+    "build3": "npx cpy 'tic-tac-toe-pwa/build/*robots.txt' src/public/",
     "build4": "npx cpy 'tic-tac-toe-pwa/build/*index.html' src/views/layouts/ --rename=tictactoe.hbs",
     "build5": "npx cpy 'tic-tac-toe-pwa/build/*favicon.ico' src/tictactoe/",
     "build6": "npx cpy 'tic-tac-toe-pwa/build/static/css/*' src/tictactoe/static/stylesheets/",
-    "build7": "npx cpy 'tic-tac-toe-pwa/build/static/js/*' src/tictactoe/static/javascripts/",    
+    "build7": "npx cpy 'tic-tac-toe-pwa/build/static/js/*' src/tictactoe/static/javascripts/",
     "build8": "npx cpy 'tic-tac-toe-pwa/build/static/media/*' src/tictactoe/static/media/",
     "build9": "npx del-cli dist && npx cpy 'conf/*' dist && npx cpy .env dist && npx cpy 'src/db/*' dist/db/ && npx cpy 'src/views/**' dist/views/",
-    "build10": "npx cpy 'src/public/**' dist/public/ && npx cpy 'src/tictactoe/**' dist/tictactoe/ && npx copy-node-modules . dist && npx tsc", 
+    "build10": "npx cpy 'src/public/**' dist/public/ && npx cpy 'src/tictactoe/**' dist/tictactoe/ && npx copy-node-modules . dist && npx tsc",
     "start": "node dist/index.js",
     "dev": "npx nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec ts-node src/index.ts",
     "postinstall": "cd tic-tac-toe-pwa && npm install --force",
@@ -22,6 +22,12 @@
   },
   "author": "",
   "license": "ISC",
+  "overrides": {
+    "wrap-ansi": {
+      "string-width": "4.2.3",
+      "strip-ansi": "6.0.1"
+    }
+  },
   "dependencies": {
     "body-parser": "^1.20.3",
     "cookie-parser": "^1.4.7",

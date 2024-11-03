@@ -32,6 +32,7 @@ Several files will be copied from the Frontend to the Backend as well.
 Finally, the 'dist' folder will be created to run and deploy independently.
 > npm run build
 
+(Optional)
 Sometimes, we cannot run build10 successfully while using 'npx copy-node-modules . dist'
 You can run 'npm install' directly in the 'dist' folder and back to the Backend project to run 'npx tsc'.
 > cd dist
