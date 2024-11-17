@@ -1,4 +1,8 @@
-# Tic Tac Toe Game Backend
+# Tic Tac Toe Game with Backend
+This project is different from normal tic-tac-toe games that it applies Google OAuth2 to login before playing.
+It locks playing only for Player-VS-Bot mode. But it can record and view play histories of players in the database. 
+The game constraints is that if you beat bot, you get one point. If you're lost, you lose 1 point.
+Besides, if you win in a row for 3 times, you get one more extra point.
 
 ## Google Credential is needed
 - Go to [https://console.cloud.google.com/apis/credentials](https://console.cloud.google.com/apis/credentials)
