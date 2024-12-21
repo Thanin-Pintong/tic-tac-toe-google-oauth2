@@ -4,6 +4,20 @@ It locks playing only for Player-VS-Bot mode. But it can record and view play hi
 The game constraints is that if you beat bot, you get one point. If you're lost, you lose 1 point.
 Besides, if you win in a row for 3 times, you get one more extra point.
 
+## How it Work !!!
+- Go to [http://localhost:4000](http://localhost:4000)
+- First page before login.
+
+![First page](./firstpage.png)
+
+- TicTacToe page after login.
+
+![TicTacToe page](./tictactoe.png)
+
+- Playing histories page.
+
+![Playing History page](./playhistory.png)
+
 ## Google Credential is needed
 - Go to [https://console.cloud.google.com/apis/credentials](https://console.cloud.google.com/apis/credentials)
 - Click **Credentials** on the left , choose one of your projects.
